@@ -1,0 +1,152 @@
+@charset "utf-8";
+
+@import "reset.css";
+div{
+    box-sizing: border-box;
+}
+.wrapper{
+    overflow: hidden;
+    width:100%;
+    header{
+        border:1px solid #e6e6e6;
+        width:100%;
+        height:.9rem;
+//      span:nth-child(1){
+//          float:left;
+//          width:.95rem;
+//          height:.9rem;
+//          background:url(http://og20zwqwb.bkt.clouddn.com/arrowLeft.png) no-repeat;
+//          background-size:.95rem .9rem;
+//      }
+        h1{
+            font-size:0.34rem;
+            font-weight:bold;
+            font-family: "微软雅黑";
+            float:left;
+            width:100%;
+            //width:5.6rem;
+            height:.9rem;
+            line-height:.9rem;
+            text-align:center;
+        }
+    }
+
+    .formInfo{
+        overflow: hidden;
+        width:100%;
+        box-sizing: border-box;
+        padding-top:1.1rem;
+        padding-left:.86rem;
+        padding-right:.86rem;
+        div:nth-child(1){
+            border-bottom:1px solid #b7b7b7;
+            height:.6rem;
+    //      padding:.1rem 0;
+            span{
+                box-sizing: border-box;
+                display:block;
+                float:left;
+                background:url(http://og20zwqwb.bkt.clouddn.com/downicon.png) no-repeat;
+                background-position:.8rem center;
+                background-size:0.14rem;
+                font-size:.24rem;
+                width:1rem;
+                margin:.1rem 0;
+                height:0.3rem;
+                line-height:.3rem;
+                border-right:1px solid #999;
+                padding-left:.2rem;
+            }
+            #phoneNumber{
+                box-sizing: border-box;
+                display:block;
+                float:left;
+                margin:.05rem .1rem .05rem .1rem;
+                padding-left:.2rem;
+                height:.4rem;
+                font-size:.28rem;
+                border:0;
+                
+            }
+        }
+        div:nth-child(2){
+            position:relative;
+            margin-top:.4rem;
+            border-bottom:1px solid #b7b7b7;
+            height:.6rem;
+            input{
+                display:block;
+                border:0;
+                height:.4rem;
+                font-size:.28rem;
+                line-height:.4rem;
+                width:5rem;
+            }
+            span,.switch{
+                display:block;
+                float:right;
+                width:.43rem;
+                height:.25rem;
+                background:url(http://og20zwqwb.bkt.clouddn.com/ceye_btn.png) no-repeat;
+                background-size:.43rem auto;
+                position:absolute;
+                top:.1rem;
+                right:.2rem;
+                
+            }
+            .switch{
+                background:url(http://og20zwqwb.bkt.clouddn.com/eye_btn.png) no-repeat;
+                background-size:.43rem auto;
+            }
+        }
+        #logIn{
+            
+            border:0;
+            display:block;
+            background:#f13b51;
+            width:5.8rem;
+            height:.8rem;
+            margin:.8rem auto .3rem auto;
+            font-size:.32rem;
+            border-radius:.5rem;
+            color:#fff;
+            
+        }
+        .forgetPsw{
+            overflow: hidden;
+            span:nth-child(1){
+                font-size:.28rem;
+                float:left;
+                color:#F13B51; 
+            }
+            span:nth-child(2){
+                font-size:.28rem;
+                float:right;
+                color:#999;
+            }
+        }
+    }//formInfo
+    .separate{
+        margin-top:4.4rem;
+    }
+    .cooperation{
+        padding:.78rem 1.6rem .7rem 1.6rem;
+        ul{
+            overflow:hidden;
+            width:100%;
+            li{
+                list-style:none;
+                float:left;
+                width:.9rem;
+                height:.9rem;
+                img{
+                    width:.9rem;
+                    height:auto;
+                }
+            }
+            li:nth-child(2),li:nth-child(3){
+                    margin-left:.8rem;
+            }
+        }
+    }
+}//wrapper

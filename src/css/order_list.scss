@@ -1,0 +1,122 @@
+@charset "utf-8";
+@import "reset.css";
+
+.wrapper{
+    background:#f0f0f0;
+    width:100%;
+    overflow-x:hidden;
+    header{
+        background:#fff;
+        font-size:.32rem;
+        width:100%;
+        height:1rem;
+        text-align: center;
+        line-height:1rem;
+        border:1px solid #f0f0f0;
+        font-weight:bold;
+    }
+    nav{
+        background:#fff;
+        width:100%;
+        margin-bottom:.2rem;
+        ul{
+            height:.8rem;
+            overflow:hidden;
+            border-bottom:1px solid #e6e6e6;
+            li{
+                float:left;
+                height:.8rem;
+                width:25%;
+                text-align: center;
+                line-height:.8rem;
+                color:#999;
+            }
+            .active{
+                color:#e31436;
+            }
+        }
+    }
+    .content{
+        background:#fff;
+       
+        box-sizing: border-box;
+        .title{
+            box-sizing: border-box;
+            padding-top:.2rem;
+            padding-left:.2rem;
+            padding-right:.2rem;
+            height:.82rem;
+            overflow:hidden;
+            .tImgBox{
+                display:block;
+                float:left;
+                height:.4rem;
+                width:.4rem;
+                border-radius: 50%;
+                margin-top:.1rem;
+                margin-right:.2rem;
+                
+            }
+            span{
+                float:left;
+                margin-top:.2rem;
+            }
+            .status{
+                float:right;
+                margin-top:.2rem;
+                color:#f13b51;
+            }
+        }
+        .details{
+            overflow:hidden;
+            padding:.2rem;
+            box-sizing: border-box;
+            position:relative;
+            background:#f7f7f7;
+            .dImgBox{
+                display:block;
+                float:left;
+                height:1.4rem;
+                width:1.4rem;
+                border:1px solid #999;
+                margin-right:.2rem;
+                img{
+                    width:100%;
+                }
+            }
+            .info{
+                width:3.9rem;
+                float:left;
+                .goodsInfo{
+                    width:3.9rem;
+                    height:.8rem;
+                    font-size:.26rem;
+                    line-height:.4rem;
+                    overflow:hidden;
+                }
+                .size{
+                    margin-top:.1rem;
+                    color:#b2b2b2;
+                }
+            }
+            .price{
+                position:absolute;
+                right:.3rem;
+                top:.2rem;
+            }
+            .num{
+                position:absolute;
+                right:.3rem;
+                top:.6rem;
+            }
+        }
+        .balance{
+            padding-right:.4rem;
+            text-align: right;
+            height:.64rem;
+            line-height:.64rem;
+            background:#fff;
+        }
+    }
+}
+

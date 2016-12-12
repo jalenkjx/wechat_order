@@ -4,10 +4,55 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
 		<title></title>
+		<link rel="stylesheet" href="./css/order_list.css" />
+		<script src="./js/require.js"></script>
+		<script src="./js/config.js"></script>
+		<script src="./js/order_list.js"></script>
 	</head>
 	<body>
-		<header>
+		<div class="wrapper">
+			<header>
+				订单列表
+			</header>
+			<nav>
+				<ul>
+					<li class="active">全部</li>
+					<li>待发货</li>
+					<li>待收货</li>
+					<li>已完成</li>
+					
+				</ul>
+			</nav>
+			<div class="content">
+				<!--待发货-->
+				<div class="toBeShipped">
+					<!--<div class="title">
+						<span class="tImgBox"><img src="" style="width:100%; border-radius:50%;"/></span><span>林咩咩澳洲代购</span><i class="status">待发货</i>
+					</div>
+					<div class="details">
+						<span class="dImgBox"><img src="" alt="" /></span>
+						<div class="info">
+							<p class="goodsInfo">荷兰原产牛栏婴幼儿奶粉专场trilo 1段荷兰原产牛栏婴幼儿奶</p>
+							<p class="size">规格：1段</p>
+						</div>
+						<i class="price">￥180</i>
+						<i class="num">×2</i>
+						
+					</div>
+					<div class="balance">共
+						<span class="number">1</span>件商品，实付款￥<i class="amount">180</i>
+					</div>-->
+				</div>
+				<!--待收货-->
+				<div class="ReceiptOfGoods">
+				</div>
+				<!--已完成-->
+				<div class="finish" >
+				</div>
+			</div>
 			
-		</header>
+			
+		</div>
+		
 	</body>
 </html>
