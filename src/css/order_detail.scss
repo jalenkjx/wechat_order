@@ -1,0 +1,173 @@
+@charset "utf-8";
+@import "reset.css";
+
+.wrapper{
+    overflow: hidden;
+    width:100%;
+    background:#f0f0f0;
+    height:100%;
+    header{
+        border:1px solid #e6e6e6;
+        width:100%;
+        height:.9rem;
+        background:#fff;
+        span:nth-child(1){
+            float:left;
+            width:.95rem;
+            height:.9rem;
+            background:url(http://og20zwqwb.bkt.clouddn.com/arrowLeft.png) no-repeat;
+            background-size:.95rem .9rem;
+        }
+        h1{
+            font-size:0.34rem;
+            font-weight:bold;
+            font-family: "微软雅黑";
+            float:left;
+            width:5.6rem;
+            height:.9rem;
+            line-height:.9rem;
+            text-align:center;
+        }
+    }//header
+    .banner{
+        width:100%;
+        height:1.8rem;
+        background:#e6e6e6;
+        span{
+            font-size:.34rem;
+            color:#f13b51;
+            padding-top:.74rem;
+            margin-left:.98rem;
+            font-weight: 600;
+            float:left;
+        }
+        img{
+            width:1.1rem;
+            float:right;
+            margin-right:1.3rem;
+            margin-top:0.42rem;
+            
+        }
+    }
+    .addressInfo{
+        height:2.04rem;
+        width:100%;
+        box-sizing: border-box;
+        padding:.2rem .2rem 0 .2rem;
+        background:#fff;
+        margin-bottom:.2rem;
+        div{
+            overflow:hidden;
+            height:auto;
+            p{
+                line-height:.44rem;
+                height:auto;
+            }
+        }
+        div{
+           
+            p:nth-child(1){
+                float:left;
+            }
+            p:nth-child(2){
+                float:right;
+            }
+        }
+        div:nth-child(2),div:nth-child(3){
+            color:#666;
+        }
+    }
+    .order{
+        .title{
+            background:#fff;
+            box-sizing: border-box;
+            padding-top:.2rem;
+            padding-left:.2rem;
+            padding-right:.2rem;
+            height:.82rem;
+            overflow:hidden;
+            .tImgBox{
+                display:block;
+                float:left;
+                height:.4rem;
+                width:.4rem;
+                border-radius: 50%;
+                margin-top:.1rem;
+                margin-right:.2rem;
+                
+            }
+            span{
+                float:left;
+                margin-top:.2rem;
+            }
+            .status{
+                float:right;
+                margin-top:.2rem;
+                color:#f13b51;
+            }
+        }
+        .details{
+            overflow:hidden;
+            padding:.2rem;
+            box-sizing: border-box;
+            position:relative;
+            background:#f7f7f7;
+            .dImgBox{
+                display:block;
+                float:left;
+                height:1.4rem;
+                width:1.4rem;
+                border:1px solid #999;
+                margin-right:.2rem;
+                img{
+                    width:100%;
+                }
+            }
+            .info{
+                width:3.9rem;
+                float:left;
+                .goodsInfo{
+                    width:3.9rem;
+                    height:.8rem;
+                    font-size:.26rem;
+                    line-height:.4rem;
+                    overflow:hidden;
+                }
+                .size{
+                    margin-top:.1rem;
+                    color:#b2b2b2;
+                }
+            }
+            .price{
+                position:absolute;
+                right:.3rem;
+                top:.2rem;
+            }
+            .num{
+                position:absolute;
+                right:.3rem;
+                top:.6rem;
+            }
+        }
+        .balance{
+            padding-right:.4rem;
+            text-align: right;
+            height:.64rem;
+            line-height:.64rem;
+            background:#fff;
+        }
+    }
+    .time{
+        height:1.2rem;
+        margin-top:.2rem;
+        background:#fff;
+        box-sizing: border-box;
+        padding:.2rem .2rem 0 .2rem;
+        color:#999;
+        .order_number,.order_time{
+            font-size:.24rem;
+            line-height:.42rem;
+            height:.42rem;
+        }
+    }
+}//wrapper

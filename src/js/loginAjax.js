@@ -56,6 +56,9 @@ define(['jquery'],function($){
 							$(this).attr('disabled','disabled');
 							$(this).val('正在登录...');
 							window.localStorage.setItem('access_token', res.access_token);
+//							//存入时间戳
+//							var time = new Date().getTime()+172800000;
+//							window.localStorage.setItem('time',time);
 							var token = window.localStorage.getItem('access_token');
 							console.log(token);
 							//window.location.href = "order.html";

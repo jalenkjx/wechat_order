@@ -90,7 +90,7 @@ gulp.task("css2",function(){
 gulp.task("js",function(){
 	//把需要合并压缩的 js 文件列出来
 	gulp.src(path.src.js)
-//		.pipe(minJs())  //压缩 js
+		//.pipe(minJs())  //压缩 js
 		.pipe(gulp.dest(path.dest)); //输出
 });
 

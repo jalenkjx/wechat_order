@@ -9,6 +9,10 @@ window.onresize = function(){
 	html.style.fontSize = fontSize + "px";
 }
 require(['jquery'],function($){
+	var api = 'http://zhenzhen.s1.natapp.cc/zzht/'
+	//var api = 'http://192.168.199.127/zzht/'
+	//var api = 'http://service.myzhenzhen.com/zzht/'
+
 	var userId = window.localStorage.getItem('userId');
 	var token = window.localStorage.getItem('access_token');
 	var imgurl = 'http://o6uda1nl0.bkt.clouddn.com/';//内网；
@@ -34,7 +38,7 @@ require(['jquery'],function($){
 	    } 
 	    //全部订单接口；
 	$.ajax({
-		url:"http://192.168.199.127/zzht/v1/api/shop/orders/"+userId+"?type=0&start=0&amount=20",
+		url:api+"v1/api/shop/orders/"+userId+"?type=0&start=0&amount=20",
 		type:"get",
 		headers:{
 			Authorization:'Bearer '+token
@@ -104,8 +108,8 @@ require(['jquery'],function($){
 				}
 			})
 			$('.order').on('click',function(){
-				console.log($(this).attr('data-id'));
-				window.localStorage.setItem('orderId',$(this).attr('data-id'));
+				var orderId = ($(this).attr('data-id'));
+				window.localStorage.setItem('orderId',orderId);
 				window.location.href = './order_detail.html';
 			})
 		}//success
