@@ -8,15 +8,11 @@ window.onresize = function(){
 	var html = document.documentElement;
 	html.style.fontSize = fontSize + "px";
 }
-require(['jquery'],function($){
-	var api = 'http://zhenzhen.s1.natapp.cc/zzht/'
-	//var api = 'http://192.168.199.127/zzht/'
-	//var api = 'http://service.myzhenzhen.com/zzht/'
+require(['jquery','param'],function($){
+
 
 	var userId = window.localStorage.getItem('userId');
 	var token = window.localStorage.getItem('access_token');
-	var imgurl = 'http://o6uda1nl0.bkt.clouddn.com/';//内网；
-	//var imgurl = 'http://7xrr05.com1.z0.glb.clouddn.com/';//外网
 
 	//保留两位小数，没有小数自动补0；
 	function toDecimal(x) { 
@@ -58,10 +54,10 @@ require(['jquery'],function($){
 				var price = toDecimal(data[i].payGoodsInfo[0].price);
 				var html = '<div class = "order" data-id="'+data[i].orderId+'">'+
 								'<div class="title">'+
-									'<span class="tImgBox"><img src="'+imgurl+data[i].seller.icon+'" style="width:100%; border-radius:50%;"/></span><span>'+data[i].seller.nickname+'</span><i class="status">'+statusHtml+'</i>'+
+									'<span class="tImgBox"><img src="'+imgLink+data[i].seller.icon+'" style="width:100%; border-radius:50%;"/></span><span>'+data[i].seller.nickname+'</span><i class="status">'+statusHtml+'</i>'+
 								'</div>'+
 								'<div class="details">'+
-									'<span class="dImgBox"><img src="'+imgurl+data[i].payGoodsInfo[0].image+'" alt="" /></span>'+
+									'<span class="dImgBox"><img src="'+imgLink+data[i].payGoodsInfo[0].image+'" alt="" /></span>'+
 									'<div class="info">'+
 										'<p class="goodsInfo">'+data[i].payGoodsInfo[0].name+'</p>'+
 										'<p class="size">规格：'+data[i].payGoodsInfo[0].size+'</p>'+

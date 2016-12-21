@@ -1,0 +1,113 @@
+@charset "utf-8";
+@import "reset.scss";
+input{
+    border:0;
+    outline: none;
+    -webkit-tap-highlight-color:rgba(255,0,0,0);
+}
+.wrapper{
+    width:100%;
+    overflow-x:hidden;
+    header{
+        border:1px solid #e6e6e6;
+        width:100%;
+        height:.9rem;
+        span:nth-child(1){
+            float:left;
+            width:.95rem;
+            height:.9rem;
+//          background:url(http://og20zwqwb.bkt.clouddn.com/arrowLeft.png) no-repeat;
+//          background-size:.95rem .9rem;
+        }
+        h1{
+            font-size:0.34rem;
+            font-weight:bold;
+            font-family: "微软雅黑";
+            float:left;
+            width:5.6rem;
+            height:.9rem;
+            line-height:.9rem;
+            text-align:center;
+        }
+    }//header   
+    .content{
+        padding:1.35rem .54rem 0 .54rem;
+        .phone{
+            height:1rem;
+            line-height:1rem;
+            font-size:.3rem;
+            border-bottom:1px solid #e1e1e1;
+            input{
+                display:inline-block;
+                height:.9rem;
+                font-size:.3rem;
+                margin-left:.7rem;
+            }
+        }
+        .check{
+            height:1rem;
+            line-height:1rem;
+            font-size:.3rem;
+            border-bottom:1px solid #e1e1e1;
+            input{
+                display:inline-block;
+                height:.9rem;
+                width:2rem;
+                font-size:.3rem;
+                margin-left:.7rem;
+            }
+            button{
+                display:inline-block;
+                width:2.3rem;
+                height:.9rem;
+                font-size:.3rem;
+                color:#fff;
+                margin-left:.2rem;
+                background:#E31436;
+            }
+            .btn-disabled{
+                background:#E31436;
+            }
+        }
+        .sure{
+            margin-top:1rem;
+            height:.88rem;
+            width:6rem;
+            font-size:.3rem;
+            color:#fff;
+            background: #e9435e;
+            display:block;
+            margin:1rem auto 0 auto;
+            border-radius:.1rem;
+        }
+        .agreement{
+            margin-top:.2rem;
+            margin-left:.8rem;
+            position:relative;
+            input[type="checkbox"]{
+                visibility: hidden;
+            }
+            label{
+                
+                span{
+                    display:inline-block;
+                    width:.24rem;
+                    height:.24rem;
+                    position:absolute;
+                    background:url(http://og20zwqwb.bkt.clouddn.com/checked.png) no-repeat;
+                    background-size:.24rem;
+                    top:.03rem;
+                    left:0;
+                }
+                .false{
+                    background:url(http://og20zwqwb.bkt.clouddn.com/unchecked.png) no-repeat;
+                    background-size:.24rem;
+                }
+            }
+            span{
+                font-size:.24rem;
+                color:#999;
+            }
+        }
+    }
+}//wrapper

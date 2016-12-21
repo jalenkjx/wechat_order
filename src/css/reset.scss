@@ -1,0 +1,155 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video ,input{
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+body {
+    font-size:.28rem;
+}
+
+:focus {
+	outline: 1;
+}
+
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary {
+    display:block;
+}
+
+li{
+    list-style:none;
+}
+button{
+	border:none;
+	outline: none;
+}
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+	text-decoration: none;
+    margin:0;
+    padding:0;
+    border:0;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+i,em{
+	font-style: normal;
+}
+
+
+
+
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input{
+	border:none;
+	outline:none;
+}
+.alert{
+        width:5.4rem;
+        height:2.5rem;
+        background:#fff;
+        z-index: 9999;
+        position:fixed;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        border-radius: .2rem;
+        border:1px solid #dadade;
+        p{
+            height:1.6rem;
+            line-height:1.6rem;
+            text-align: center;
+            font-size:.32rem;
+            font-weight: 600;
+            border-bottom:1px solid #dadade;
+            box-sizing: border-box;
+        }
+        button{
+            width:100%;
+            background:#fff;
+            height:.9rem;
+            line-height:.9rem;
+            text-align: center;
+            border-radius: 0 0 .2rem .2rem;
+            color:#E31436;
+        }
+        
+    }
+    .confirm{
+        width:5.4rem;
+        height:2.5rem;
+        background:#fff;
+        z-index: 9999;
+        position:fixed;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        border-radius: .2rem;
+        border:1px solid #dadade;
+        p{
+            height:1.6rem;
+            line-height:1.6rem;
+            text-align: center;
+            font-size:.32rem;
+            font-weight: 600;
+            border-bottom:1px solid #dadade;
+            box-sizing: border-box;
+        }
+        button{
+            float:left;
+            width:50%;
+            background:#fff;
+            height:.9rem;
+            line-height:.9rem;
+            text-align: center;
+            border-radius: 0 0 0 .2rem;
+            color:#E31436;
+        }
+        .confirm_sure{
+            border-right:1px solid #dadada;
+        }
+        .confirm_cancel{
+            border-radius: 0 0 .2rem 0;
+        }
+        
+    }
+   #mask{
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    background:#000;
+    opacity:0.3;
+    z-index:888;
+} 

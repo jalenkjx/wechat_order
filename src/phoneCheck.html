@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<title>手机验证</title>
+		<link rel="stylesheet" href="./css/phoneCheck.css" />
+		<script src="./js/require.js"></script>
+		<script src="./js/config.js"></script>
+		<script src="./js/phoneCheck.js"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<span class="back"></span>
+				<h1>手机验证</h1>
+			</header>
+			<div class="content">
+				<div class="phone">手机号
+					<input id="phoneNum" type="number" placeholder="请输入手机号码"/>
+				</div>
+				<div class="check">验证码
+					<input type="number" placeholder="请输入验证码" id="checktext"/>
+					<button id="getCheckCode" class="btn-disabled" disabled="disabled">获取验证码</button>
+				</div>
+				
+				<button class="sure">确认</button>
+				<div class="agreement">
+					<label class="label">
+						<span></span>
+						<input type="checkbox" checked id="agree"/>
+					</label>	
+						<span>我已阅读<a href="http://www.myzhenzhen.com/agreement.html" style="color:#e31436;">《真真海淘用户服务协议》</a></span>
+				</div>
+			</div>
+			<div class="alert" style="display: none;">
+				<p></p>
+				<button class="alert_sure">确定</button>
+			</div>
+			
+		</div>
+			
+			
+	</body>
+</html>

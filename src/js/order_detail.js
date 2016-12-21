@@ -8,15 +8,11 @@ window.onresize = function(){
 	var html = document.documentElement;
 	html.style.fontSize = fontSize + "px";
 }
-require(['jquery'],function($){
-	var imgurl = 'http://o6uda1nl0.bkt.clouddn.com/';//内网；
-	//var imgurl = 'http://7xrr05.com1.z0.glb.clouddn.com/';//外网
+require(['jquery','param'],function($){
 
-	var api = 'http://zhenzhen.s1.natapp.cc/zzht/'
-	//var api = 'http://192.168.199.127/zzht/'
-	//var api = 'http://service.myzhenzhen.com/zzht/'
 	var orderId = window.localStorage.getItem('orderId');
 	var token = window.localStorage.getItem('access_token');
+	console.log(token);
 	console.log(orderId);
 	$.ajax({
 		type:"get",
@@ -25,8 +21,9 @@ require(['jquery'],function($){
 			'Authorization': 'Bearer '+token
 		},
 		success:function(res){
+			console.log(res);
 			console.log(res.datas);
-			var data = res.datas
+			var data = res.datas;
 			var status;
 			var icon;
 			switch(data.status){
@@ -52,12 +49,12 @@ require(['jquery'],function($){
 			//卖家姓名
 			$('.nickname').eq(0).html(data.seller.nickname);
 			//卖家icon
-			$('.tImgBox').children('img').attr('src',imgurl+data.seller.icon);
+			$('.tImgBox').children('img').attr('src',imgLink+data.seller.icon);
 			//订单商品信息
 			var num = 0;
 			$.each(data.payGoodsInfo,function(i){
 				var html = '<div class="details">'+
-								'<span class="dImgBox"><img src="'+imgurl+data.payGoodsInfo[i].image+'" alt="" /></span>'+
+								'<span class="dImgBox"><img src="'+imgLink+data.payGoodsInfo[i].image+'" alt="" /></span>'+
 								'<div class="info">'+
 									'<p class="goodsInfo">'+data.payGoodsInfo[i].name+'</p>'+
 									'<p class="size">规格：'+data.payGoodsInfo[i].size+'</p>'+
